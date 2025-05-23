@@ -8,8 +8,7 @@ jupyterlite-pyodide-kernel==0.5.0
 
 
 
-# SQL kernel (added)
-jupyterlite-sqlite-kernel==0.1.0
+
 
 # Language support (optional)
 jupyterlab-language-pack-fr-FR
