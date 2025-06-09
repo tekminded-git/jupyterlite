@@ -24,7 +24,7 @@ def generate_ecommerce_dataset(n_customers=1000, n_orders=3000, n_products=200,
     products_df = pd.DataFrame({
         "ProductID": product_ids,
         "ProductCategory": [np.random.choice(product_categories) for _ in range(n_products)],
-        "ProductName": [fake.catch_phrase() for _ in range(n_products)],
+       # "ProductName": [fake.catch_phrase() for _ in range(n_products)],
         "BasePrice": np.round(np.random.uniform(5, 500, size=n_products), 2)
     })
 
@@ -60,3 +60,8 @@ def generate_ecommerce_dataset(n_customers=1000, n_orders=3000, n_products=200,
     order_items_df = pd.DataFrame(order_items)
 
     return orders_df, order_items_df, products_df
+
+  
+
+
+    
