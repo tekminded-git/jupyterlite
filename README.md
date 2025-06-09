@@ -35,3 +35,15 @@ optional utilities and extensions to make the JupyterLite experience more enjoya
 For a template based on the Xeus kernel, see the [`jupyterlite/xeus-python-demo` repository](https://github.com/jupyterlite/xeus-python-demo)
 
 
+
+## Local Python Packages
+
+This JupyterLite deployment is configured to load additional Python packages
+from wheels stored in the `pypi/` directory. To include `Faker`, download the
+wheel locally using:
+
+```bash
+pip download faker --only-binary=:all: -d pypi
+```
+
+The wheel filename must then be referenced in `jupyter-lite.json`.
